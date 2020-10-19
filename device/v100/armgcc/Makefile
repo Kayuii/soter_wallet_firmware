@@ -2,7 +2,7 @@ PROJECT_NAME     := soter_wallet_v1
 TARGETS          := nrf52840_xxaa
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := ../../../nrf_sdk/nRF5_SDK_15.2.0_9412b96
+SDK_ROOT := /Users/gecko/ARMSDK/nRF52/15_2_0
 PROJ_DIR := ..
 THIRDPARTY_DIR := ../../../thirdparty
 
@@ -207,10 +207,10 @@ SRC_FILES += \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh.c \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh_ble.c \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh_freertos.c \
-  $(SDK_ROOT)/components/softdevice/common/nrf_sdh_soc.c \
-  $(THIRDPARTY_DIR)/nanopb/pb_common.c \
-  $(THIRDPARTY_DIR)/nanopb/pb_decode.c \
-  $(THIRDPARTY_DIR)/nanopb/pb_encode.c \
+  $(SDK_ROOT)/components/softdevice/common/nrf_sdh_soc.c \ \
+  $(SDK_ROOT)/external/nano-pb/pb_common.c \
+  $(SDK_ROOT)/external/nano-pb/pb_decode.c \
+  $(SDK_ROOT)/external/nano-pb/pb_encode.c \
   $(THIRDPARTY_DIR)/trezor-crypto/address.c \
   $(THIRDPARTY_DIR)/trezor-crypto/base32.c \
   $(THIRDPARTY_DIR)/trezor-crypto/base58.c \
@@ -267,7 +267,7 @@ INC_FOLDERS += \
   $(PROJ_DIR)/../../thirdparty \
   $(PROJ_DIR)/../../include \
   $(PROJ_DIR)/../../include/transport \
-  $(THIRDPARTY_DIR)/nanopb \
+  $(SDK_ROOT)/external/nano-pb/
   $(THIRDPARTY_DIR)/trezor-crypto \
   $(THIRDPARTY_DIR)/trezor-crypto/aes \
   $(THIRDPARTY_DIR)/trezor-crypto/chacha20poly1305 \

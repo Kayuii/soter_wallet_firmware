@@ -2,7 +2,7 @@ PROJECT_NAME     := secure_bootloader_ble_v100
 TARGETS          := nrf52840_xxaa_s140
 OUTPUT_DIRECTORY := _build
 
-SDK_ROOT := ../../../nrf_sdk/nRF5_SDK_15.2.0_9412b96
+SDK_ROOT := /Users/gecko/ARMSDK/nRF52/15_2_0
 PROJ_DIR := ../..
 
 $(OUTPUT_DIRECTORY)/nrf52840_xxaa_s140.out: \
