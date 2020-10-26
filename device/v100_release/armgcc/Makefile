@@ -268,7 +268,7 @@ INC_FOLDERS += \
   $(PROJ_DIR)/../../thirdparty \
   $(PROJ_DIR)/../../include \
   $(PROJ_DIR)/../../include/transport \
-  $(SDK_ROOT)/external/nano-pb/
+  $(SDK_ROOT)/external/nano-pb/ \
   $(THIRDPARTY_DIR)/trezor-crypto \
   $(THIRDPARTY_DIR)/trezor-crypto/aes \
   $(THIRDPARTY_DIR)/trezor-crypto/chacha20poly1305 \

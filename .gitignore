@@ -17,3 +17,5 @@ ewallet_vs/
 nrf_sdk/*
 !nrf_sdk/README.md
 HW
+
+*.zip

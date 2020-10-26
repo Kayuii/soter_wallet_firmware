@@ -68,6 +68,7 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_rng.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_saadc.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_spim.c \
+  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_wdt.c \
   $(PROJ_DIR)/../../source/main.c \
   $(PROJ_DIR)/../../source/board/canvas.c \
   $(PROJ_DIR)/../../source/board/confirm_sm.c \
@@ -207,7 +208,7 @@ SRC_FILES += \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh.c \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh_ble.c \
   $(SDK_ROOT)/components/softdevice/common/nrf_sdh_freertos.c \
-  $(SDK_ROOT)/components/softdevice/common/nrf_sdh_soc.c \ \
+  $(SDK_ROOT)/components/softdevice/common/nrf_sdh_soc.c \
   $(SDK_ROOT)/external/nano-pb/pb_common.c \
   $(SDK_ROOT)/external/nano-pb/pb_decode.c \
   $(SDK_ROOT)/external/nano-pb/pb_encode.c \
@@ -267,7 +268,7 @@ INC_FOLDERS += \
   $(PROJ_DIR)/../../thirdparty \
   $(PROJ_DIR)/../../include \
   $(PROJ_DIR)/../../include/transport \
-  $(SDK_ROOT)/external/nano-pb/
+  $(SDK_ROOT)/external/nano-pb/ \
   $(THIRDPARTY_DIR)/trezor-crypto \
   $(THIRDPARTY_DIR)/trezor-crypto/aes \
   $(THIRDPARTY_DIR)/trezor-crypto/chacha20poly1305 \

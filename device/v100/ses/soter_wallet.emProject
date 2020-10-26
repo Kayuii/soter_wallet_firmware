@@ -287,6 +287,7 @@
       <file file_name="../../../include/FreeRTOSConfig.h" />
       <file file_name="../config/custom_board.h" />
       <file file_name="../config/sdk_config.h" />
+      <file file_name="../config/app_config.h" />
     </folder>
     <folder Name="trezor-crypto">
       <file file_name="../../../thirdparty/trezor-crypto/address.c" />
@@ -351,6 +352,7 @@
       <file file_name="../../../../../../ARMSDK/nRF52/15_2_0/external/nano-pb/pb_decode.c" />
       <file file_name="../../../../../../ARMSDK/nRF52/15_2_0/external/nano-pb/pb_encode.c" />
     </folder>
+    <configuration Name="Debug" c_preprocessor_definitions="USE_APP_CONFIG" />
   </project>
   <configuration Name="Release" c_preprocessor_definitions="NDEBUG" />
   <configuration

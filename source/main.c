@@ -38,6 +38,8 @@
 #include "task.h"
 #include "timers.h"
 
+#include "nrf_delay.h"
+
 #define DEAD_BEEF                                                          \
     0xDEADBEEF /**< Value used as error code on stack dump, can be used to \
                   identify stack location on stack unwind. */
@@ -309,6 +311,8 @@ int main(void) {
 
     usb_init();
     soter_ble_init((char *)g_product_id);
+
+    nrf_delay_ms(10000);
 
     // Activate deep sleep mode.
     SCB->SCR |= SCB_SCR_SLEEPDEEP_Msk;
